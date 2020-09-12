@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:translationY="60dp">
+
+            <TextView
+                android:id="@+id/txt2"
+                android:layout_width="254dp"
+                android:layout_height="64dp"
+                android:text="@string/txt2"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:translationX="70dp" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/descimg2"
+                app:srcCompat="@drawable/pure" />
+
+            <Button
+                android:id="@+id/btnvoltar2"
+                android:layout_width="145dp"
+                android:layout_height="wrap_content"
+                android:text="@string/btnvoltar" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
