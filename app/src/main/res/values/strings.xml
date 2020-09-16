@@ -1,12 +1,18 @@
 <resources>
     <string name="app_name">Mistério</string>
+
     <string name="btn1">Cozinhando</string>
     <string name="btn2">Ache o País</string>
     <string name="btn3">Poder do Sol</string>
     <string name="btn4">Código</string>
     <string name="btnvoltar"> ← Voltar </string>
+    <string name="btndica">Dica 💡 </string>
+
     <string name="txt1">Você deve descascar a batata se quiser purê para comer com o cachorro quente!!</string>
     <string name="txt2">Pegue seu purê e vá embora</string>
+    <string name="txt3">Chocolate caro mas muito bom!</string>
+
     <string name="dscimg1">Batata querendo ser descascada</string>
     <string name="descimg2">Purê fofo</string>
+    <string name="descimg3">Mapa mundi</string>
 </resources>

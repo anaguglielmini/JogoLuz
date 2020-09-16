@@ -4,6 +4,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+    <Button
+        android:id="@+id/btndicaBatata"
+        android:layout_width="94dp"
+        android:layout_height="43dp"
+        android:text="@string/btndica"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.949"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -22,7 +33,7 @@
             <TextView
                 android:id="@+id/txt1"
                 android:layout_width="348dp"
-                android:layout_height="match_parent"
+                android:layout_height="72dp"
                 android:text="@string/txt1"
                 android:textColor="#000000"
                 android:textSize="18sp"
@@ -31,7 +42,7 @@
             <ImageButton
                 android:id="@+id/img1"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="490dp"
                 android:contentDescription="@string/dscimg1"
                 app:srcCompat="@drawable/batatacasca" />
 
