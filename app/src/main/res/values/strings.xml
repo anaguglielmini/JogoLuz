@@ -7,6 +7,7 @@
     <string name="btn4">Código</string>
     <string name="btnvoltar"> ← Voltar </string>
     <string name="btndica">Dica 💡 </string>
+    <string name="btncuriosidade">Curiosidade</string>
 
     <string name="txt1">Você deve descascar a batata se quiser purê para comer com o cachorro quente!!</string>
     <string name="txt2">Pegue seu purê e vá embora</string>
@@ -15,4 +16,6 @@
     <string name="dscimg1">Batata querendo ser descascada</string>
     <string name="descimg2">Purê fofo</string>
     <string name="descimg3">Mapa mundi</string>
+    <string name="descimg4">Caixão fechado</string>
+    <string name="descimg5">dio</string>
 </resources>
