@@ -4,10 +4,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
     <Button
         android:id="@+id/btndicaBatata"
         android:layout_width="94dp"
         android:layout_height="43dp"
+        android:onClick="dicabatata"
         android:text="@string/btndica"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -40,16 +42,18 @@
                 android:translationX="30dp" />
 
             <ImageButton
-                android:id="@+id/img1"
+                android:id="@+id/imgbtn1"
                 android:layout_width="match_parent"
                 android:layout_height="490dp"
                 android:contentDescription="@string/dscimg1"
+                android:onClick="batata"
                 app:srcCompat="@drawable/batatacasca" />
 
             <Button
-                android:id="@+id/btnvoltar"
+                android:id="@+id/btnvoltar1"
                 android:layout_width="145dp"
                 android:layout_height="wrap_content"
+                android:onClick="voltar1"
                 android:text="@string/btnvoltar" />
         </LinearLayout>
     </ScrollView>
