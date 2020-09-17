@@ -44,16 +44,16 @@
             <ImageButton
                 android:id="@+id/imgbtn1"
                 android:layout_width="match_parent"
-                android:layout_height="490dp"
-                android:contentDescription="@string/dscimg1"
+                android:layout_height="474dp"
+                android:contentDescription="@string/descimg1"
                 android:onClick="batata"
                 app:srcCompat="@drawable/batatacasca" />
 
             <Button
-                android:id="@+id/btnvoltar1"
+                android:id="@+id/btnvoltar"
                 android:layout_width="145dp"
                 android:layout_height="wrap_content"
-                android:onClick="voltar1"
+                android:onClick="voltar"
                 android:text="@string/btnvoltar" />
         </LinearLayout>
     </ScrollView>

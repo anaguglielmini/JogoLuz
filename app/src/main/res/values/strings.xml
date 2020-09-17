@@ -13,6 +13,7 @@
     <string name="btncuriosidade">Curiosidade</string>
     <string name="btnconfirmar">Confirmar</string>
     <string name="btninstrucao">Como Jogar</string>
+    <string name="btnfechar">X Fechar</string>
 
     <string name="txt1">Você deve descascar a batata se quiser purê para comer com o cachorro quente!!</string>
     <string name="txt2">Pegue seu purê e vá embora</string>
@@ -22,10 +23,12 @@
         liberado, quando resolver ele, o próximo irá abrir quando clicar em voltar. Ao terminar a
         terceira fase, um código deverá ser colocado para chegar ao fim do jogo. Boa sorte! E que a
         batata esteja com você!!</string>
+    <string name="txtdica1">É só clicar na batata</string>
+    <string name="txtbesta">Não nessa né, a outra, aperta o voltar pra passar essa fase</string>
 
-    <string name="dscimg1">Batata querendo ser descascada</string>
+    <string name="descimg1">Batata querendo ser descascada</string>
     <string name="descimg2">Purê fofo</string>
     <string name="descimg3">Mapa mundi</string>
     <string name="descimg4">Caixão fechado</string>
-    <string name="descimg5">dio</string>
+    <string name="descimg5">Dio</string>
 </resources>

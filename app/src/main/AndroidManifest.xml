@@ -17,6 +17,55 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".BatataDica">
+            <intent-filter>
+                <action android:name="android.intent.action.DICA"/>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".InstrucoesActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.INSTRUCOES"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".CozinhandoActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.FASE1"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".CozinhandoFinal">
+            <intent-filter>
+                <action android:name="android.intent.action.FASE1_FINAL"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Tela_inicial2">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN2"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Tela_inicial3">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN3"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Tela_inicialFinal">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN_FINAL"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name="Final_Jogo">
+            <intent-filter>
+                <action android:name="android.intent.action.FINAL"/>
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

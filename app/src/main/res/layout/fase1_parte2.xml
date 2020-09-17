@@ -32,9 +32,10 @@
                 app:srcCompat="@drawable/pure" />
 
             <Button
-                android:id="@+id/btnvoltar2"
+                android:id="@+id/btnvoltarmain2"
                 android:layout_width="145dp"
                 android:layout_height="wrap_content"
+                android:onClick="voltarmain2"
                 android:text="@string/btnvoltar" />
         </LinearLayout>
     </ScrollView>
