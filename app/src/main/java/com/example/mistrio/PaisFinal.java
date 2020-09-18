@@ -6,14 +6,15 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class CozinhandoFinal extends AppCompatActivity {
+public class PaisFinal extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.fase1_parte2);
+        setContentView(R.layout.fase2_parte2);
     }
     public void fase2(View view){
-        Intent intent = new Intent(this, Pais.class);
+        Intent intent = new Intent(this, Dio.class);
         startActivity(intent);
     }
 }
+

@@ -1,34 +1,40 @@
 <resources>
     <string name="app_name">Mistério</string>
 
-    <string name="btn1">Cozinhando</string>
-    <string name="btn21">a???</string>
-    <string name="btn31">p???</string>
-    <string name="btn41">c???</string>
-    <string name="btn2">Ache o País</string>
-    <string name="btn3">Poder do Sol</string>
-    <string name="btn4">Código</string>
-    <string name="btnvoltar"> ← Voltar </string>
-    <string name="btndica">Dica 💡 </string>
-    <string name="btncuriosidade">Curiosidade</string>
-    <string name="btnconfirmar">Confirmar</string>
-    <string name="btninstrucao">Como Jogar</string>
-    <string name="btnfechar">X Fechar</string>
+    <string name="btnvoltar"> ← Voltar</string> //botão de voltar
+    <string name="btncomeçar">Começar</string> //botão de começo da MainActivity
+    <string name="btnfinal1">Cozinhando</string> //botão para a tela final com a resolução da fase 1
+    <string name="btnfinal2">Ache o País</string> //resolução fase 2
+    <string name="btnfinal3">Poder do Sol</string> // resolução fase 3
+    <string name="btncodigo">Código</string> // botão para colocar o código
+    <string name="btnfase1"> Próximo → </string> // direciona da fase 1 para a fase 2
+    <string name="btnfase2"> Próximo → </string> // da fase 2 para a 3
+    <string name="btntela"> Próximo → </string> // tela final com as resoluções e botão de codigo
+    <string name="btndica">Dica 💡 </string> //botão de dica
+    <string name="btncuriosidade">Curiosidade</string> // botão para curiosidade no final
+    <string name="btnconfirmar">Confirmar</string> // botão para confirmar o código escrito na ultima parte
+    <string name="btninstrucao">Como Jogar</string> // botão que mostra como o jogo funciona
+    <string name="btnfechar">X Fechar</string> // botão para fechar as abas de dica
 
     <string name="txt1">Você deve descascar a batata se quiser purê para comer com o cachorro quente!!</string>
     <string name="txt2">Pegue seu purê e vá embora</string>
     <string name="txt3">Chocolate caro mas muito bom!</string>
     <string name="txtCódigo">Digite o código!</string>
-    <string name="txtInstrução">Este jogo consiste em resolver 3 minijogos. Apenas o primeiro está
-        liberado, quando resolver ele, o próximo irá abrir quando clicar em voltar. Ao terminar a
-        terceira fase, um código deverá ser colocado para chegar ao fim do jogo. Boa sorte! E que a
-        batata esteja com você!!</string>
+    <string name="txtInstrução">Este jogo consiste em resolver 3 minijogos seguidos, no final poderá rever a
+        resolução. Ao terminar o terceiro minijogo, um código deverá ser colocado para chegar ao fim do jogo.
+        Boa sorte! E que a batata esteja com você!!</string>
     <string name="txtdica1">É só clicar na batata</string>
     <string name="txtbesta">Não nessa né, a outra, aperta o voltar pra passar essa fase</string>
+    <string name="txtdica2">Chocolate Belga</string>
+    <string name="txtchocolate">Quem é que não gosta de um chocolate desses??
+    Pena que é caro para poder comprar com frequência.</string>
 
     <string name="descimg1">Batata querendo ser descascada</string>
     <string name="descimg2">Purê fofo</string>
     <string name="descimg3">Mapa mundi</string>
     <string name="descimg4">Caixão fechado</string>
     <string name="descimg5">Dio</string>
+    <string name="descimg6">Chocolates Belga</string>
+
+    <string name="hint1">Código</string>
 </resources>

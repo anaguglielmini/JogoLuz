@@ -24,7 +24,6 @@
                 android:id="@+id/btnInstrucao"
                 android:layout_width="254dp"
                 android:layout_height="64dp"
-                android:onClick="instrucao"
                 android:text="@string/btninstrucao"
                 android:translationX="70dp" />
 
@@ -37,30 +36,28 @@
                 android:id="@+id/btn1"
                 android:layout_width="254dp"
                 android:layout_height="64dp"
-                android:onClick="cozinhandofinal"
-                android:text="@string/btn1"
+                android:text="@string/btnfinal1"
                 android:translationX="70dp" />
 
             <Button
                 android:id="@+id/btn2"
                 android:layout_width="254dp"
                 android:layout_height="64dp"
-                android:onClick="pais"
-                android:text="@string/btn2"
+                android:text="@string/btnfinal2"
                 android:translationX="70dp" />
 
             <Button
                 android:id="@+id/btn3"
                 android:layout_width="254dp"
                 android:layout_height="64dp"
-                android:text="@string/btn31"
+                android:text="@string/btnfinal3"
                 android:translationX="70dp" />
 
             <Button
                 android:id="@+id/btn4"
                 android:layout_width="254dp"
                 android:layout_height="64dp"
-                android:text="@string/btn41"
+                android:text="@string/btncodigo"
                 android:translationX="70dp" />
         </LinearLayout>
     </ScrollView>

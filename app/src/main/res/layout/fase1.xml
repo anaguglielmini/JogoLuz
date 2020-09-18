@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -18,43 +19,36 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.023" />
 
-    <ScrollView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="170dp"
+        android:orientation="vertical"
+        android:translationY="60dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.983">
 
-        <LinearLayout
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="348dp"
+            android:layout_height="72dp"
+            android:text="@string/txt1"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:translationX="30dp" />
+
+        <ImageButton
+            android:id="@+id/imgbtn1"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:translationY="60dp">
+            android:layout_height="474dp"
+            android:contentDescription="@string/descimg1"
+            android:onClick="batata"
+            app:srcCompat="@drawable/batatacasca" />
 
-            <TextView
-                android:id="@+id/txt1"
-                android:layout_width="348dp"
-                android:layout_height="72dp"
-                android:text="@string/txt1"
-                android:textColor="#000000"
-                android:textSize="18sp"
-                android:translationX="30dp" />
+    </LinearLayout>
 
-            <ImageButton
-                android:id="@+id/imgbtn1"
-                android:layout_width="match_parent"
-                android:layout_height="474dp"
-                android:contentDescription="@string/descimg1"
-                android:onClick="batata"
-                app:srcCompat="@drawable/batatacasca" />
-
-            <Button
-                android:id="@+id/btnvoltar"
-                android:layout_width="145dp"
-                android:layout_height="wrap_content"
-                android:onClick="voltar"
-                android:text="@string/btnvoltar" />
-        </LinearLayout>
-    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

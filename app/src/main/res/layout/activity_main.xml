@@ -21,7 +21,7 @@
             android:layout_height="wrap_content"
             android:baselineAligned="false"
             android:orientation="vertical"
-            android:translationY="60dp">
+            android:translationY="100dp">
 
             <Button
                 android:id="@+id/btnInstrucao"
@@ -37,33 +37,13 @@
                 android:layout_height="39dp" />
 
             <Button
-                android:id="@+id/btn1"
+                android:id="@+id/btnComeco"
                 android:layout_width="254dp"
                 android:layout_height="64dp"
-                android:onClick="cozinhando"
-                android:text="@string/btn1"
+                android:onClick="comeco"
+                android:text="@string/btncomeçar"
                 android:translationX="70dp" />
 
-            <Button
-                android:id="@+id/btn2"
-                android:layout_width="254dp"
-                android:layout_height="64dp"
-                android:text="@string/btn21"
-                android:translationX="70dp" />
-
-            <Button
-                android:id="@+id/btn3"
-                android:layout_width="254dp"
-                android:layout_height="64dp"
-                android:text="@string/btn31"
-                android:translationX="70dp" />
-
-            <Button
-                android:id="@+id/btn4"
-                android:layout_width="254dp"
-                android:layout_height="64dp"
-                android:text="@string/btn41"
-                android:translationX="70dp" />
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

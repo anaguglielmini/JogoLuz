@@ -8,7 +8,6 @@ import android.widget.ImageButton;
 import androidx.appcompat.app.AppCompatActivity;
 
 import static com.example.mistrio.R.id.btndicaBatata;
-import static com.example.mistrio.R.id.btnvoltar;
 import static com.example.mistrio.R.id.imgbtn1;
 
 public class CozinhandoActivity extends AppCompatActivity {
@@ -20,11 +19,9 @@ public class CozinhandoActivity extends AppCompatActivity {
         setContentView(R.layout.fase1);
 
         ImageButton batata = findViewById(imgbtn1);
-        Button voltar = findViewById(R.id.btnvoltar);
         Button dicabatata = findViewById(R.id.btndicaBatata);
 
         batata.setOnClickListener(Fase1Listener);
-        voltar.setOnClickListener(Fase1Listener);
         dicabatata.setOnClickListener(Fase1Listener);
     }
 
@@ -32,16 +29,12 @@ public class CozinhandoActivity extends AppCompatActivity {
     private View.OnClickListener Fase1Listener = new View.OnClickListener() {
         public void onClick(View b) {
 
-            switch (b.getId()) {
+            switch (b.getId()) { // b de batata
                 case imgbtn1:
                     x++;
                     if (x > 2) {
                         setContentView(R.layout.fase1_parte2);
                     }
-                    break;
-
-                case btnvoltar:
-                    setContentView(R.layout.activity_main);
                     break;
 
                 case btndicaBatata:

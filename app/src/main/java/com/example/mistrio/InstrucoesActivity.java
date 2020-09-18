@@ -12,7 +12,7 @@ public class InstrucoesActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.instrucoes);
     }
-        public void voltarinicio(View view) {
+        public void voltar(View view) {
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }

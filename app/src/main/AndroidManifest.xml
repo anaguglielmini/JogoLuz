@@ -43,15 +43,21 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".Tela_inicial2">
+        <activity android:name=".Pais">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN2"/>
+                <action android:name="android.intent.action.FASE2"/>
             </intent-filter>
         </activity>
 
-        <activity android:name=".Tela_inicial3">
+        <activity android:name=".PaisDica">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN3"/>
+                <action android:name="android.intent.action.FASE2_DICA"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".PaisFinal">
+            <intent-filter>
+                <action android:name="android.intent.action.FASE2_FINAL"/>
             </intent-filter>
         </activity>
 

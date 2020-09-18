@@ -20,20 +20,25 @@
         <TextView
             android:id="@+id/txtCodigo"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/txtCódigo" />
+            android:layout_height="40dp"
+            android:text="@string/txtCódigo"
+            android:textColor="#000000"
+            android:textSize="18sp" />
 
         <EditText
             android:id="@+id/txtcod"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="number" />
+            android:hint="@string/hint1"
+            android:inputType="number"
+            android:autofillHints="" />
 
         <Button
-            android:id="@+id/btnConfirm"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Button" />
+            android:id="@+id/btnconfirmar"
+            android:layout_width="254dp"
+            android:layout_height="64dp"
+            android:text="@string/btnconfirmar"
+            android:translationX="70dp"/>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

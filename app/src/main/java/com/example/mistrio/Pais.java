@@ -16,12 +16,9 @@ public class Pais extends AppCompatActivity {
         Intent intent = new Intent(this, PaisDica.class);
         startActivity(intent);
     }
-    public void voltarmain2(View view){
-        Intent intent=new Intent(this, Tela_inicial2.class);
-        startActivity(intent);
-    }
+
     public void belgica(View view){
-        Intent intent=new Intent(this, Tela_inicial2.class);
+        Intent intent=new Intent(this, PaisFinal.class);
         startActivity(intent);
     }
 }
