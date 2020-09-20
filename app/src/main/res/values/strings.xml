@@ -19,7 +19,7 @@
     <string name="txtDica1">Clique na batata</string>
     <string name="txtFase2">Chocolate caro mas muito bom</string>
     <string name="txtDica2">Chocolate Belga</string>
-
+<string name="btntela">próximo</string>
 
     <string name="btncomeçar">Começar</string> //botão de começo da MainActivity
     <string name="btnfinal1">Cozinhando</string> //botão para a tela final com a resolução da fase 1
