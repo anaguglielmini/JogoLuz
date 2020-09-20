@@ -1,5 +1,6 @@
 package com.example.mistrio;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -24,7 +25,14 @@ public class CozinhandoActivity extends AppCompatActivity {
         batata.setOnClickListener(Fase1Listener);
         dicabatata.setOnClickListener(Fase1Listener);
     }
-
+    public void dicabatata(View view) {
+        Intent intent = new Intent(this, BatataDica.class);
+        startActivity(intent);
+    }
+    public void batata(View view) {
+        Intent intent = new Intent(this, CozinhandoFinal.class);
+        startActivity(intent);
+    }
     private int x = 0;
     private View.OnClickListener Fase1Listener = new View.OnClickListener() {
         public void onClick(View b) {
@@ -47,4 +55,5 @@ public class CozinhandoActivity extends AppCompatActivity {
         }
     };
 }
+
 
