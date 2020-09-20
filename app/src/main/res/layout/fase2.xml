@@ -6,58 +6,60 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="309dp"
-        android:layout_height="52dp"
-        android:text="@string/txt3"
-        android:textColor="#000000"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.321"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.106" />
-
-    <Button
-        android:id="@+id/btnBelga"
-        android:layout_width="23dp"
-        android:layout_height="20dp"
-        android:onClick="belgica"
-        app:layout_constraintBottom_toBottomOf="@+id/img3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.461"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/img3"
-        app:layout_constraintVertical_bias="0.25"
-        tools:visibility="invisible" />
-
-    <ImageView
-        android:id="@+id/img3"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="300dp"
-        android:layout_marginTop="3dp"
-        android:contentDescription="@string/descimg3"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.148"
-        app:srcCompat="@drawable/mapa" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <Button
-        android:id="@+id/btndicaMapa"
-        android:layout_width="94dp"
-        android:layout_height="43dp"
-        android:onClick="dicamapa"
-        android:text="@string/btndica"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.949"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023" />
+        <Button
+            android:id="@+id/btnDica2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="dica2"
+            android:text="@string/btndica2" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:text="@string/txtFase2"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:contentDescription="@string/descimg3"
+            app:srcCompat="@drawable/mapa" />
+
+        <ImageButton
+            android:id="@+id/btnAlemanha"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:contentDescription="@string/descimg7"
+            android:visibility="visible"
+            app:srcCompat="@drawable/alemanha" />
+
+        <ImageButton
+            android:id="@+id/btnBelgica"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:contentDescription="@string/descimg8"
+            android:onClick="belgica"
+            app:srcCompat="@drawable/belgica" />
+
+        <ImageButton
+            android:id="@+id/imageButton7"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:contentDescription="@string/descimg9"
+            app:srcCompat="@drawable/europa" />
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

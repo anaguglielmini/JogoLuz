@@ -8,7 +8,6 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="16dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -16,27 +15,18 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/txtChocolate"
-            android:layout_width="396dp"
-            android:layout_height="131dp"
-            android:text="@string/txtchocolate"
-            android:textColor="#000000"
-            android:textSize="24sp"
-            android:translationX="10dp" />
-
-        <ImageView
-            android:id="@+id/imageView6"
+            android:id="@+id/textView2"
             android:layout_width="match_parent"
-            android:layout_height="244dp"
-            android:contentDescription="@string/descimg6"
-            app:srcCompat="@drawable/chocolate" />
+            android:layout_height="51dp"
+            android:text="@string/txtDica1"
+            android:textColor="#000000"
+            android:textSize="18sp" />
 
         <Button
-            android:id="@+id/btnfase1"
-            android:layout_width="145dp"
+            android:id="@+id/btnFechar"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="fase3"
-            android:text="@string/btnfase1"
-            android:translationX="240dp" />
+            android:onClick="fechar"
+            android:text="@string/btnFechar1" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

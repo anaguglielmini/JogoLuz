@@ -1,52 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="170dp"
-        android:orientation="vertical"
-        android:translationY="70dp"
+        android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0">
+        app:layout_constraintTop_toTopOf="parent">
 
-        <Button
-            android:id="@+id/btndicaBatata"
-            android:layout_width="94dp"
-            android:layout_height="43dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="0dp"
-            android:onClick="dicabatata"
-            android:text="@string/btndica"
-            app:layout_constraintBottom_toTopOf="@+id/txt1"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/txt1"
-            android:layout_width="348dp"
-            android:layout_height="72dp"
-            android:text="@string/txt1"
-            android:textColor="#000000"
-            android:textSize="18sp"
-            android:translationX="30dp" />
-
-        <ImageButton
-            android:id="@+id/imgbtn1"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="474dp"
-            android:contentDescription="@string/descimg1"
-            android:onClick="batata"
-            app:srcCompat="@drawable/batatacasca" />
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
 
-    </LinearLayout>
+            <Button
+                android:id="@+id/btnDica1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="dica"
+                android:text="@string/btndica" />
 
+            <TextView
+                android:id="@+id/txt1"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:text="@string/txtFase1"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <ImageButton
+                android:id="@+id/btnBatata"
+                android:layout_width="match_parent"
+                android:layout_height="482dp"
+                android:contentDescription="@string/descimg1"
+                android:onClick="pure"
+                app:srcCompat="@drawable/batatacasca" />
+
+        </LinearLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
