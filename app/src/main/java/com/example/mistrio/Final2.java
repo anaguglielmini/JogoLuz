@@ -17,7 +17,8 @@ public class Final2 extends AppCompatActivity {
 
         btnProximo2 = findViewById(R.id.btnProximo2);
     }
-    public void proximo2(View view){
+
+    public void proximo2(View view) {
         Intent intent = new Intent(this, Fase3.class);
         startActivity(intent);
     }

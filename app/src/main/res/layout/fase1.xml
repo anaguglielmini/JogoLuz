@@ -20,8 +20,9 @@
 
             <Button
                 android:id="@+id/btnDica1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="254dp"
+                android:layout_height="64dp"
+                android:layout_gravity="center"
                 android:onClick="dica"
                 android:text="@string/btndica" />
 
@@ -30,6 +31,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="58dp"
                 android:text="@string/txtFase1"
+                android:textAlignment="center"
                 android:textColor="#000000"
                 android:textSize="18sp" />
 

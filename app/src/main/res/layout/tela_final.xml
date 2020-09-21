@@ -29,6 +29,7 @@
                 android:id="@+id/btn1"
                 android:layout_width="254dp"
                 android:layout_height="64dp"
+                android:onClick="cozinhando"
                 android:text="@string/btnfinal1"
                 android:translationX="70dp" />
 
@@ -36,6 +37,7 @@
                 android:id="@+id/btn2"
                 android:layout_width="254dp"
                 android:layout_height="64dp"
+                android:onClick="pais"
                 android:text="@string/btnfinal2"
                 android:translationX="70dp" />
 
@@ -43,6 +45,7 @@
                 android:id="@+id/btn3"
                 android:layout_width="254dp"
                 android:layout_height="64dp"
+                android:onClick="sol"
                 android:text="@string/btnfinal3"
                 android:translationX="70dp" />
 
@@ -50,6 +53,7 @@
                 android:id="@+id/btn4"
                 android:layout_width="254dp"
                 android:layout_height="64dp"
+                android:onClick="codigo"
                 android:text="@string/btncodigo"
                 android:translationX="70dp" />
         </LinearLayout>

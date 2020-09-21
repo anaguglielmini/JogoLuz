@@ -14,13 +14,15 @@
             android:id="@+id/imageView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:contentDescription="@string/descimg2"
             app:srcCompat="@drawable/pure" />
 
         <Button
             android:id="@+id/btnProximo"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="254dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center"
             android:onClick="proximo"
             android:text="@string/btnProximo" />
     </LinearLayout>

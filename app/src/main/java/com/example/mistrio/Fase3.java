@@ -46,8 +46,11 @@ public class Fase3 extends AppCompatActivity implements SensorEventListener {
 
     @Override
     public void onSensorChanged(SensorEvent event) {
-        if(event.sensor.getType() == Sensor.TYPE_LIGHT){
-            setContentView(R.layout.fase3_dio);
+        if(event.sensor.getType() == Sensor.TYPE_LIGHT) {
+            if (event.values[0] == 0) {
+                Intent intent = new Intent(this, Final3.class);
+                startActivity(intent);
+            }
         }
     }
 
@@ -56,7 +59,6 @@ public class Fase3 extends AppCompatActivity implements SensorEventListener {
 
     }
 }
-
 
 
 

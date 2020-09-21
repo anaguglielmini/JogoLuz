@@ -40,14 +40,15 @@
             android:id="@+id/btnconfirmar"
             android:layout_width="254dp"
             android:layout_height="64dp"
+            android:layout_gravity="center"
             android:onClick="confirmar"
-            android:text="@string/btnconfirmar"
-            android:translationX="70dp" />
+            android:text="@string/btnconfirmar" />
 
         <TextView
             android:id="@+id/txtErrado"
             android:layout_width="match_parent"
             android:layout_height="72dp"
+            android:layout_gravity="center"
             android:text="@string/txtErrado"
             android:textColor="#FF0000"
             android:textSize="18sp"

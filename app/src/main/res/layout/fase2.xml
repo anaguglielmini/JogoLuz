@@ -17,8 +17,9 @@
 
         <Button
             android:id="@+id/btnDica2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="254dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center"
             android:onClick="dica2"
             android:text="@string/btndica2" />
 
@@ -27,6 +28,7 @@
             android:layout_width="match_parent"
             android:layout_height="42dp"
             android:text="@string/txtFase2"
+            android:textAlignment="center"
             android:textColor="#000000"
             android:textSize="18sp" />
 
@@ -34,29 +36,33 @@
             android:id="@+id/imageView2"
             android:layout_width="match_parent"
             android:layout_height="280dp"
+            android:layout_gravity="center"
             android:contentDescription="@string/descimg3"
             app:srcCompat="@drawable/mapa" />
 
         <ImageButton
             android:id="@+id/btnAlemanha"
-            android:layout_width="match_parent"
-            android:layout_height="65dp"
+            android:layout_width="254dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center"
             android:contentDescription="@string/descimg7"
             android:visibility="visible"
             app:srcCompat="@drawable/alemanha" />
 
         <ImageButton
             android:id="@+id/btnBelgica"
-            android:layout_width="match_parent"
-            android:layout_height="65dp"
+            android:layout_width="254dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center"
             android:contentDescription="@string/descimg8"
             android:onClick="belgica"
             app:srcCompat="@drawable/belgica" />
 
         <ImageButton
             android:id="@+id/imageButton7"
-            android:layout_width="match_parent"
-            android:layout_height="65dp"
+            android:layout_width="254dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center"
             android:contentDescription="@string/descimg9"
             app:srcCompat="@drawable/europa" />
 
