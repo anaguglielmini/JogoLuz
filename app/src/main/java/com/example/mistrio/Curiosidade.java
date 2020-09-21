@@ -7,19 +7,18 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Dica3 extends AppCompatActivity {
+public class Curiosidade extends AppCompatActivity {
 
-    Button btnFechar3;
+    Button btnVoltar3;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.dica3);
+        setContentView(R.layout.curiosidade);
 
-        btnFechar3 = findViewById(R.id.btnFechar3);
+        btnVoltar3 = findViewById(R.id.btnVoltar3);
     }
-    public void fechar3(View view) {
-        Intent intent = new Intent(this, Fase3.class);
+    public void voltar3(View view){
+        Intent intent = new Intent(this, Final3.class);
         startActivity(intent);
     }
 }
-

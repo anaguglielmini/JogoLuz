@@ -22,6 +22,7 @@
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:text="@string/txtCódigo"
+            android:textAlignment="center"
             android:textColor="#000000"
             android:textSize="18sp" />
 
@@ -29,16 +30,35 @@
             android:id="@+id/txtcod"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:autofillHints=""
             android:ems="10"
             android:hint="@string/hint1"
             android:inputType="number"
-            android:autofillHints="" />
+            android:textAlignment="center" />
 
         <Button
             android:id="@+id/btnconfirmar"
             android:layout_width="254dp"
             android:layout_height="64dp"
+            android:onClick="confirmar"
             android:text="@string/btnconfirmar"
-            android:translationX="70dp"/>
+            android:translationX="70dp" />
+
+        <TextView
+            android:id="@+id/txtErrado"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:text="@string/txtErrado"
+            android:textColor="#FF0000"
+            android:textSize="18sp"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/btnVoltar2"
+            android:layout_width="254dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center"
+            android:onClick="voltar2"
+            android:text="@string/btnVoltar" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

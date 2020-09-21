@@ -10,7 +10,14 @@
     <string name="btndica2">Dica 💡 </string>
     <string name="btnFechar2">Fechar</string>
     <string name="btnProximo2">Próxima fase</string>
-
+    <string name="btnfinal1">Cozinhando</string> //botão para a tela final com a resolução da fase 1
+    <string name="btnfinal2">Ache o País</string> //resolução fase 2
+    <string name="btnfinal3">Poder do Sol</string> // resolução fase 3
+    <string name="btncodigo">Código</string> // botão para colocar o código
+    <string name="btntela">próximo</string>
+    <string name="btncuriosidade">Curiosidade</string> // botão para curiosidade no final
+    <string name="btnconfirmar">Confirmar</string> // botão para confirmar o código escrito na ultima parte
+    <string name="btnFechar3">Fechar</string>
 
     <string name="txtComo">Este jogo consiste em resolver 3 minijogos seguidos, no final poderá rever a
         resolução. Ao terminar o terceiro minijogo, um código deverá ser colocado para chegar ao fim do jogo.
@@ -19,25 +26,11 @@
     <string name="txtDica1">Clique na batata</string>
     <string name="txtFase2">Chocolate caro mas muito bom</string>
     <string name="txtDica2">Chocolate Belga</string>
-<string name="btntela">próximo</string>
-
-    <string name="btncomeçar">Começar</string> //botão de começo da MainActivity
-    <string name="btnfinal1">Cozinhando</string> //botão para a tela final com a resolução da fase 1
-    <string name="btnfinal2">Ache o País</string> //resolução fase 2
-    <string name="btnfinal3">Poder do Sol</string> // resolução fase 3
-    <string name="btncodigo">Código</string> // botão para colocar o código
-
-    <string name="btncuriosidade">Curiosidade</string> // botão para curiosidade no final
-    <string name="btnconfirmar">Confirmar</string> // botão para confirmar o código escrito na ultima parte
-
-
-
-
-
+    <string name="txtDica3">Deixe o ambiente escuro</string>
     <string name="txtCódigo">Digite o código!</string>
-
-    <string name="txtchocolate">Quem é que não gosta de um chocolate desses??
-    Pena que é caro para poder comprar com frequência.</string>
+    <string name="txtErrado">Código errado, reveja o final das fases para colocar o código correto</string>
+    <string name="txtCuriosidade">Dio Brando é um vampiro da linha de mangás e animes Jojo\'s Bizarre
+    Adventures, por isso ele não aparece na luz do dia.</string>
 
     <string name="descimg1">Batata querendo ser descascada</string>
     <string name="descimg2">Purê fofo</string>

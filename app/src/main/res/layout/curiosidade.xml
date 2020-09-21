@@ -15,21 +15,21 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/txtComo"
+            android:id="@+id/txtCuriosidade"
             android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:layout_gravity="center"
-            android:text="@string/txtComo"
+            android:layout_height="95dp"
+            android:text="@string/txtCuriosidade"
             android:textAlignment="center"
             android:textColor="#000000"
             android:textSize="18sp" />
 
         <Button
-            android:id="@+id/btnVoltar"
+            android:id="@+id/btnVoltar3"
             android:layout_width="254dp"
             android:layout_height="64dp"
             android:layout_gravity="center"
-            android:onClick="voltar"
+            android:onClick="voltar3"
             android:text="@string/btnVoltar" />
     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
