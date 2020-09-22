@@ -1,13 +1,8 @@
 package com.example.mistrio;
 
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
-
 import androidx.appcompat.app.AppCompatActivity;
 
-public class FimJogo extends AppCompatActivity {
+public class Creditos extends AppCompatActivity {
     Button btnContinuar2;
 
     @Override
@@ -21,4 +16,5 @@ public class FimJogo extends AppCompatActivity {
         Intent intent = new Intent(this, FimJogo2.class);
         startActivity(intent);
     }
+}
 }

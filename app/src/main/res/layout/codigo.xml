@@ -44,6 +44,14 @@
             android:onClick="confirmar"
             android:text="@string/btnconfirmar" />
 
+        <Button
+            android:id="@+id/btnVoltar2"
+            android:layout_width="254dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center"
+            android:onClick="voltar2"
+            android:text="@string/btnVoltar" />
+
         <TextView
             android:id="@+id/txtErrado"
             android:layout_width="match_parent"
@@ -53,13 +61,5 @@
             android:textColor="#FF0000"
             android:textSize="18sp"
             android:visibility="invisible" />
-
-        <Button
-            android:id="@+id/btnVoltar2"
-            android:layout_width="254dp"
-            android:layout_height="64dp"
-            android:layout_gravity="center"
-            android:onClick="voltar2"
-            android:text="@string/btnVoltar" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

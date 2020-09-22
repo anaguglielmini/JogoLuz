@@ -19,7 +19,7 @@ public class Final2 extends AppCompatActivity {
     }
 
     public void proximo2(View view) {
-        Intent intent = new Intent(this, Fase3.class);
+        Intent intent = new Intent(this, Fase3_antes.class);
         startActivity(intent);
     }
 }

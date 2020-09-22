@@ -18,12 +18,16 @@
     <string name="btncuriosidade">Curiosidade</string> // botão para curiosidade no final
     <string name="btnconfirmar">Confirmar</string> // botão para confirmar o código escrito na ultima parte
     <string name="btnFechar3">Fechar</string>
+    <string name="btnContinuar">Continuar</string>
+    <string name="btnContinuar2">Continuar??</string>
+    <string name="btnRejogar">Jogar Novamente</string>
+    <string name="btnCreditos">Ver Créditos</string>
 
     <string name="txtComo">Este jogo consiste em resolver 3 minijogos seguidos, no final poderá rever a
         resolução. Ao terminar o terceiro minijogo, um código deverá ser colocado para chegar ao fim do jogo.
         Boa sorte! E que a batata esteja com você!!</string>
     <string name="txtFase1">Descasque a batata para fazer o purê</string>
-    <string name="txtDica1">Clique na batata</string>
+    <string name="txtDica1">Clique na batata mais de uma vez</string>
     <string name="txtFase2">Chocolate caro mas muito bom</string>
     <string name="txtDica2">Chocolate Belga</string>
     <string name="txtDica3">Deixe o ambiente escuro</string>
@@ -31,6 +35,11 @@
     <string name="txtErrado">Código errado, reveja o final das fases para colocar o código correto</string>
     <string name="txtCuriosidade">Dio Brando é um vampiro da linha de mangás e animes Jojo\'s Bizarre
     Adventures, por isso ele não aparece na luz do dia.</string>
+    <string name="txtFase3Antes">Jogue essa fase em um ambiente claro ou ligue as luzes para jogar a próxima fase</string>
+    <string name="txtFinalJogo">NANIII??QUE?? Você achou que teria mais coisa? Um final feliz? Então, você está
+    bem enganado, aqui é o fim do jogo mesmo. Quem sabe algum dia ele tenha outro final, até lá, essa é a minha despedida,
+    de criadora desse jogo, com você, caro jogador. Foi bom enquanto durou :)</string>
+    <string name="txtFim">Fim de Jogo</string>
 
     <string name="descimg1">Batata querendo ser descascada</string>
     <string name="descimg2">Purê fofo</string>
@@ -41,6 +50,7 @@
     <string name="descimg7">Alemanha</string>
     <string name="descimg8">Belgica</string>
     <string name="descimg9">Europa</string>
+    <string name="descimg10">DIOO</string>
 
     <string name="hint1">Código</string>
 </resources>

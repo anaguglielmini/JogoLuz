@@ -46,6 +46,14 @@
         </activity>
         <activity android:name=".Curiosidade">
         </activity>
+        <activity android:name=".Fase3_antes">
+        </activity>
+        <activity android:name="Resultado1">
+        </activity>
+        <activity android:name="Resultado2">
+        </activity>
+        <activity android:name="Resultado3">
+        </activity>
     </application>
 
 </manifest>

@@ -15,29 +15,27 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/txtCuriosidade"
+            android:id="@+id/textView5"
             android:layout_width="match_parent"
-            android:layout_height="95dp"
-            android:text="@string/txtCuriosidade"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/berkshire_swash"
+            android:text="@string/txtFim"
             android:textAlignment="center"
             android:textColor="#000000"
-            android:textSize="18sp" />
+            android:textSize="50sp" />
 
         <Button
-            android:id="@+id/btnVoltar3"
-            android:layout_width="254dp"
-            android:layout_height="64dp"
-            android:layout_gravity="center"
-            android:onClick="voltar3"
-            android:text="@string/btnVoltar" />
+            android:id="@+id/btnRejogar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="rejogar"
+            android:text="@string/btnRejogar" />
 
-        <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="376dp"
-            android:layout_height="547dp"
-            android:layout_gravity="center"
-            android:contentDescription="@string/descimg10"
-            app:srcCompat="@drawable/diocara2" />
+        <Button
+            android:id="@+id/btnCreditos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="creditos"
+            android:text="@string/btnCreditos" />
     </LinearLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

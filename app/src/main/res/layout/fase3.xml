@@ -14,7 +14,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0">
+        app:layout_constraintVertical_bias="0.0">
 
         <Button
             android:id="@+id/btndicaCaixao"
@@ -25,42 +25,21 @@
             android:onClick="dicacaixao"
             android:text="@string/btndica" />
 
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/gifImageView"
+            android:layout_width="162dp"
+            android:layout_height="108dp"
+            android:layout_gravity="center"
+            android:src="@drawable/jojo2" />
+
+        <ImageView
+            android:id="@+id/imgCaixao"
+            android:layout_width="261dp"
+            android:layout_height="282dp"
+            android:layout_gravity="center"
+            android:contentDescription="@string/descimg4"
+            app:srcCompat="@drawable/caixaofechado" />
+
     </LinearLayout>
-
-    <pl.droidsonroids.gif.GifImageView
-        android:id="@+id/gifImageView"
-        android:layout_width="219dp"
-        android:layout_height="170dp"
-        android:layout_marginStart="176dp"
-        android:layout_marginTop="532dp"
-        android:src="@drawable/jojo2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <pl.droidsonroids.gif.GifImageView
-        android:id="@+id/gifImageView2"
-        android:layout_width="228dp"
-        android:layout_height="177dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="88dp"
-        android:src="@drawable/jojo"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/imgCaixao"
-        android:layout_width="269dp"
-        android:layout_height="540dp"
-        android:layout_marginStart="47dp"
-        android:layout_marginTop="36dp"
-        android:contentDescription="@string/descimg4"
-        android:foregroundGravity="center_vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.252"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.561"
-        app:srcCompat="@drawable/caixaofechado" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
