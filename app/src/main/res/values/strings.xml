@@ -23,8 +23,8 @@
     <string name="btnRejogar">Jogar Novamente</string>
     <string name="btnCreditos">Ver Créditos</string>
 
-    <string name="txtComo">Este jogo consiste em resolver 3 minijogos seguidos, no final poderá rever a
-        resolução. Ao terminar o terceiro minijogo, um código deverá ser colocado para chegar ao fim do jogo.
+    <string name="txtComo">Este jogo consiste em resolver 3 minijogos seguidos, no final, você poderá rever a
+        resolução para colocar um código e terminar o jogo.
         Boa sorte! E que a batata esteja com você!!</string>
     <string name="txtFase1">Descasque a batata para fazer o purê</string>
     <string name="txtDica1">Clique na batata mais de uma vez</string>
