@@ -27,5 +27,5 @@ public class Final3 extends AppCompatActivity {
         Intent intent = new Intent(this, Tela_final.class);
         startActivity(intent);
     }
-}// ele vai pra final, a do dio
+}
 

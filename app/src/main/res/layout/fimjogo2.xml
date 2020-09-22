@@ -31,11 +31,5 @@
             android:onClick="rejogar"
             android:text="@string/btnRejogar" />
 
-        <Button
-            android:id="@+id/btnCreditos"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="creditos"
-            android:text="@string/btnCreditos" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

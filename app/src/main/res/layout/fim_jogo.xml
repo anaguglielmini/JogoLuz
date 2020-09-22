@@ -15,13 +15,14 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/txtFinalJogo"
+            android:id="@+id/txtFim"
             android:layout_width="match_parent"
-            android:layout_height="163dp"
+            android:layout_height="wrap_content"
             android:text="@string/txtFinalJogo"
-            android:textAlignment="textStart"
+            android:textAlignment="center"
+            android:textAllCaps="false"
             android:textColor="#000000"
-            android:textSize="18sp" />
+            android:textSize="24sp" />
 
         <Button
             android:id="@+id/btnContinuar2"

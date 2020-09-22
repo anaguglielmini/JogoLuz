@@ -13,7 +13,7 @@ public class FimJogo extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.fimjogo);
+        setContentView(R.layout.fim_jogo);
 
         btnContinuar2 = findViewById(R.id.btnContinuar2);
     }
