@@ -16,44 +16,45 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ComoActivity">
-        </activity>
-        <activity android:name=".Dica1">
-        </activity>
-        <activity android:name=".Fase1">
-        </activity>
-        <activity android:name=".Final1">
-        </activity>
-        <activity android:name=".Dica2">
-        </activity>
-        <activity android:name=".Fase2">
-        </activity>
-        <activity android:name=".Final2">
-        </activity>
-        <activity android:name="Dica3">
-        </activity>
-        <activity android:name="Fase3">
-        </activity>
-        <activity android:name="Final3">
-        </activity>
         <activity android:name=".Codigo">
         </activity>
-        <activity android:name="FimJogo">
-        </activity>
-        <activity android:name="FimJogo2">
-        </activity>
-        <activity android:name="Tela_final">
+        <activity android:name=".ComoActivity">
         </activity>
         <activity android:name=".Curiosidade">
         </activity>
+        <activity android:name=".Dica1">
+        </activity>
+        <activity android:name=".Dica2">
+        </activity>
+        <activity android:name=".Dica3">
+        </activity>
+        <activity android:name=".Fase1">
+        </activity>
+        <activity android:name=".Fase2">
+        </activity>
+        <activity android:name=".Fase3">
+        </activity>
         <activity android:name=".Fase3_antes">
         </activity>
-        <activity android:name="Resultado1">
+        <activity android:name=".FimJogo">
         </activity>
-        <activity android:name="Resultado2">
+        <activity android:name=".FimJogo2">
         </activity>
-        <activity android:name="Resultado3">
+        <activity android:name=".Final1">
         </activity>
+        <activity android:name=".Final2">
+        </activity>
+        <activity android:name=".Final3">
+        </activity>
+        <activity android:name=".Resultado1">
+        </activity>
+        <activity android:name=".Resultado2">
+        </activity>
+        <activity android:name=".Resultado3">
+        </activity>
+        <activity android:name=".Tela_final">
+        </activity>
+
     </application>
 
 </manifest>
