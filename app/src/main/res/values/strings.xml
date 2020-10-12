@@ -19,9 +19,8 @@
     <string name="btnconfirmar">Confirmar</string> // botão para confirmar o código escrito na ultima parte
     <string name="btnFechar3">Fechar</string>
     <string name="btnContinuar">Continuar</string>
-    <string name="btnContinuar2">Continuar??</string>
-    <string name="btnRejogar">Jogar Novamente</string>
-    <string name="btnCreditos">Ver Créditos</string>
+    <string name="btnContinuar2">Continuar</string>
+    <string name="btnRejogar">Tentar um recorde melhor?</string>
 
     <string name="txtComo">Este jogo consiste em resolver 3 minijogos seguidos, no final, você poderá rever a
         resolução para colocar um código e terminar o jogo.
@@ -36,10 +35,10 @@
     <string name="txtCuriosidade">Dio Brando é um vampiro da linha de mangás e animes Jojo\'s Bizarre
     Adventures, por isso ele não aparece na luz do dia.</string>
     <string name="txtFase3Antes">Jogue essa fase em um ambiente claro ou ligue as luzes para jogar a próxima fase</string>
-    <string name="txtFinalJogo">NANIII??QUE?? Você achou que teria mais coisa? Um final feliz? Então, você está
-    bem enganado, aqui é o fim do jogo mesmo. Quem sabe algum dia ele tenha outro final, até lá, essa é a minha despedida,
-    de criadora desse jogo, com você, caro jogador. Foi bom enquanto durou :)</string>
+    <string name="txtFinalJogo">Parabéns </string>
+    <string name="txtContinuaçãoo"> Você chegou ao fim desse jogo em</string>
     <string name="txtFim">Fim de Jogo</string>
+    <string name="txtnick">Apelido</string>
 
     <string name="descimg1">Batata querendo ser descascada</string>
     <string name="descimg2">Purê fofo</string>
