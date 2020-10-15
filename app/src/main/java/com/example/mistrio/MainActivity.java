@@ -8,8 +8,10 @@ import android.content.Intent;
 import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
+import android.os.SystemClock;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Chronometer;
 
 import com.example.mistrio.BdJogo.JogoOpenHelper;
 
@@ -17,10 +19,11 @@ import java.util.Random;
 
 
 public class MainActivity extends AppCompatActivity {
+
     Button btnComo;
     Button btnComeco;
 
-    private SQLiteDatabase conexao;
+    private SQLiteDatabase conecao;
     private JogoOpenHelper jogoOpenHelper;
 
     @Override
@@ -37,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
     private void criarConexao(){
         try {
             jogoOpenHelper = new JogoOpenHelper(this);
-            conexao = jogoOpenHelper.getWritableDatabase();
+            conecao = jogoOpenHelper.getWritableDatabase();
 
         }catch (SQLException ex){
             AlertDialog.Builder dlg = new AlertDialog.Builder(this);
@@ -53,14 +56,17 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void comeco(View view) {
-        int x = new Random().nextInt(3);
-        if (x == 1) {
-            Intent intent = new Intent(this, Fase1.class);
-            startActivity(intent);
+    public void comeco(View v) {
+        Global.cronometro = new Cronometro();
+        Global.cronometro.Start(System.currentTimeMillis());
+        Intent intent = new Intent(this, Fase1.class);
+        startActivity(intent);
+       /* int x = new Random().nextInt(3);
+        if (x == 1) {*/
+                        }
         }
 
-        if (x == 2) {
+        /*if (x == 2) {
             Intent intent = new Intent(this, Fase2.class);
             startActivity(intent);
         }
@@ -69,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(this, Fase3_antes.class);
             startActivity(intent);
         }
-    }
-}
+    }*/
+
 
 

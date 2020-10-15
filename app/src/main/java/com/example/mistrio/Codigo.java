@@ -2,8 +2,10 @@ package com.example.mistrio;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.SystemClock;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Chronometer;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -27,12 +29,14 @@ public class Codigo extends AppCompatActivity {
         txtcod = findViewById(R.id.txtcod);
         btnconfirmar = findViewById(R.id.btnconfirmar);
         btnVoltar2 = findViewById(R.id.btnVoltar2);
+
     }
     public void confirmar(View view) {
         cod = Integer.parseInt(txtcod.getText().toString());
         if (cod == 423) {
             Intent intent = new Intent(this, FimJogo.class);
             startActivity(intent);
+
         }
         else{
             txtErrado.setVisibility(View.VISIBLE);
