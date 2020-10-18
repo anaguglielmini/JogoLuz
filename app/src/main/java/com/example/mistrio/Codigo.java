@@ -32,8 +32,10 @@ public class Codigo extends AppCompatActivity {
 
     }
     public void confirmar(View view) {
+        //String codigo = txtcod.getText().toString();
+
         cod = Integer.parseInt(txtcod.getText().toString());
-        if (cod == 423) {
+        if (cod == 423 /*&& codigo.isEmpty()*/) {
             Intent intent = new Intent(this, FimJogo.class);
             startActivity(intent);
 

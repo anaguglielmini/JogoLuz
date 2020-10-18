@@ -29,13 +29,24 @@
             android:text="@string/btnComo" />
 
         <EditText
-            android:id="@+id/txtnick"
+            android:id="@+id/txtApelido"
             android:layout_width="254dp"
             android:layout_height="64dp"
             android:layout_gravity="center"
             android:ems="10"
             android:hint="@string/txtnick"
             android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:autofillHints="" />
+
+        <EditText
+            android:id="@+id/txtIdade"
+            android:layout_width="254dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:hint="@string/txtIdade"
+            android:inputType="numberDecimal"
             android:textAlignment="center"
             android:autofillHints="" />
 

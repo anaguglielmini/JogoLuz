@@ -1,55 +1,59 @@
 package com.example.mistrio;
 
-
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
-import android.database.SQLException;
-import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
-import android.os.SystemClock;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.Chronometer;
+import android.widget.EditText;
+import android.widget.ListView;
+import android.widget.Toast;
 
-import com.example.mistrio.BdJogo.JogoOpenHelper;
-
-import java.util.Random;
-
+import java.util.ArrayList;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
     Button btnComo;
     Button btnComeco;
+    EditText txtApelido;
+    EditText txtIdade;
+    ListView listViewPontuacao;
 
-    private SQLiteDatabase conecao;
-    private JogoOpenHelper jogoOpenHelper;
+    BancoDados db = new BancoDados(this);
 
+    ArrayAdapter<String> adapter;
+    ArrayList<String> arrayList;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        listViewPontuacao = findViewById(R.id.listViewPontuacao);
         btnComo = findViewById(R.id.btnComo);
         btnComeco = findViewById(R.id.btnComeco);
+        txtApelido = findViewById(R.id.txtApelido);
+        txtIdade = findViewById(R.id.txtIdade);
 
-        criarConexao();
+        /*TESTE DO CRUD*/
+        // insert ok
+        db.addJogador(new Jogador("Ana Luiza", 16, 30));
+
+        // Toast.makeText(MainActivity.this, "Salvo com sucesso", Toast.LENGTH_LONG).show();
     }
 
-    private void criarConexao(){
-        try {
-            jogoOpenHelper = new JogoOpenHelper(this);
-            conecao = jogoOpenHelper.getWritableDatabase();
 
-        }catch (SQLException ex){
-            AlertDialog.Builder dlg = new AlertDialog.Builder(this);
-            dlg.setTitle("Erro");
-            dlg.setMessage(ex.getMessage());
-            dlg.setNeutralButton("Ok", null);
-            dlg.show();
+     /*btnComeco.setOnclickListener(new View.OnClickListener(){
+        @Override
+        public void comeco(View view){
+            Global.cronometro = new Cronometro();
+            Global.cronometro.Start(System.currentTimeMillis());
+            Intent intent = new Intent(this, Fase1.class);
+            startActivity(intent);
+
         }
-    }
+    });*/
 
     public void como(View view) {
         Intent intent = new Intent(this, ComoActivity.class);
@@ -57,14 +61,50 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void comeco(View v) {
-        Global.cronometro = new Cronometro();
-        Global.cronometro.Start(System.currentTimeMillis());
-        Intent intent = new Intent(this, Fase1.class);
-        startActivity(intent);
+
+        String apelido = txtApelido.getText().toString();
+        String idade = txtIdade.getText().toString();
+
+        if (apelido.isEmpty()){
+            txtApelido.setError("Este campo é obrigatório");
+        }
+        else if (0<1){
+            //insert
+            db.addJogador(new Jogador(apelido, idade));
+            Global.cronometro = new Cronometro();
+            Global.cronometro.Start(System.currentTimeMillis());
+
+            Intent intent = new Intent(this, Fase1.class);
+            startActivity(intent);
+
+            listarJogadores();
+        } else{
+            //update
+        }
+
+
+
        /* int x = new Random().nextInt(3);
         if (x == 1) {*/
                         }
-        }
+
+    public void listarJogadores(){
+
+        /*List<Jogador> jogadores = db.listaTodasPontuacoes();
+
+        arrayList = new ArrayList<String>();
+
+        adapter = new ArrayAdapter<String>(MainActivity.this, android.R.layout.simple_list_item_1, arrayList);
+
+        listViewPontuacao.setAdapter(adapter);
+
+        for(Jogador j : jogadores){
+            //Log.d("Tempos", "/nID:" + j.getCodigo() + " Nome: " + j.getApelido());
+            arrayList.add(j.getCodigo() + "-" + j.getApelido() + "-" + j.getTempo());
+            adapter.notifyDataSetInvalidated();
+        }*/
+    }
+}
 
         /*if (x == 2) {
             Intent intent = new Intent(this, Fase2.class);

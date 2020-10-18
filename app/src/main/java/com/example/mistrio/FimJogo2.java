@@ -21,11 +21,11 @@ public class FimJogo2 extends AppCompatActivity {
         setContentView(R.layout.fimjogo2);
 
         btnRejogar = findViewById(R.id.btnRejogar);
-        chronometer = findViewById(R.id.cronometro);
+        /*chronometer = findViewById(R.id.cronometro);*/
     }
     public void rejogar(View view){
-        chronometer.setBase(SystemClock.elapsedRealtime());
-        pauseOffset = 0;
+        /*chronometer.setBase(SystemClock.elapsedRealtime());
+        pauseOffset = 0;*/
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }

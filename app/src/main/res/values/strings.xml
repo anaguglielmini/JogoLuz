@@ -23,7 +23,8 @@
     <string name="btnRejogar">Tentar um recorde melhor?</string>
 
     <string name="txtComo">Este jogo consiste em resolver 3 minijogos seguidos, no final, você poderá rever a
-        resolução para colocar um código e terminar o jogo.
+        resolução para colocar um código e terminar o jogo. Coloque um apelido para que fique registrado o
+        tempo em que você conseguiu concluir o jogo.
         Boa sorte! E que a batata esteja com você!!</string>
     <string name="txtFase1">Descasque a batata para fazer o purê</string>
     <string name="txtDica1">Clique na batata mais de uma vez</string>
@@ -39,6 +40,7 @@
     <string name="txtContinuaçãoo"> Você chegou ao fim desse jogo em</string>
     <string name="txtFim">Fim de Jogo</string>
     <string name="txtnick">Apelido</string>
+    <string name="txtIdade">Idade</string>
 
     <string name="descimg1">Batata querendo ser descascada</string>
     <string name="descimg2">Purê fofo</string>
