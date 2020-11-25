@@ -41,6 +41,9 @@
     <string name="txtFim">Fim de Jogo</string>
     <string name="txtnick">Apelido</string>
     <string name="txtIdade">Idade</string>
+    <string name="txtTitulo">Coloque seu nome e idade</string>
+    <string name="hintNome">Nome</string>
+    <string name="hintIdade">Idade</string>
 
     <string name="descimg1">Batata querendo ser descascada</string>
     <string name="descimg2">Purê fofo</string>
@@ -54,4 +57,5 @@
     <string name="descimg10">DIOO</string>
 
     <string name="hint1">Código</string>
+    <string name="btnLocalizacao">Get Current Localization</string>
 </resources>

@@ -17,7 +17,7 @@
         <TextView
             android:id="@+id/txtComo"
             android:layout_width="match_parent"
-            android:layout_height="121dp"
+            android:layout_height="194dp"
             android:layout_gravity="center"
             android:text="@string/txtComo"
             android:textAlignment="center"

@@ -1,8 +1,14 @@
 package com.example.mistrio;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.app.AlertDialog;
+import android.app.Dialog;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -25,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
     ArrayAdapter<String> adapter;
     ArrayList<String> arrayList;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,18 +50,6 @@ public class MainActivity extends AppCompatActivity {
         // Toast.makeText(MainActivity.this, "Salvo com sucesso", Toast.LENGTH_LONG).show();
     }
 
-
-     /*btnComeco.setOnclickListener(new View.OnClickListener(){
-        @Override
-        public void comeco(View view){
-            Global.cronometro = new Cronometro();
-            Global.cronometro.Start(System.currentTimeMillis());
-            Intent intent = new Intent(this, Fase1.class);
-            startActivity(intent);
-
-        }
-    });*/
-
     public void como(View view) {
         Intent intent = new Intent(this, ComoActivity.class);
         startActivity(intent);
@@ -65,30 +60,31 @@ public class MainActivity extends AppCompatActivity {
         String apelido = txtApelido.getText().toString();
         String idade = txtIdade.getText().toString();
 
-        if (apelido.isEmpty()){
-            txtApelido.setError("Este campo é obrigatório");
-        }
-        else if (0<1){
-            //insert
-            db.addJogador(new Jogador(apelido, idade));
-            Global.cronometro = new Cronometro();
-            Global.cronometro.Start(System.currentTimeMillis());
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.GINGERBREAD) {
+            if (apelido.isEmpty()) {
+                txtApelido.setError("Este campo é obrigatório");
+            } else if (0 < 1) {
+                //insert
+                db.addJogador(new Jogador(apelido, idade));
+                Global.cronometro = new Cronometro();
+                Global.cronometro.Start(System.currentTimeMillis());
 
-            Intent intent = new Intent(this, Fase1.class);
-            startActivity(intent);
+                Intent intent = new Intent(this, Fase1.class);
+                startActivity(intent);
 
-            listarJogadores();
-        } else{
-            //update
+                listarJogadores();
+            } else {
+                //update
+            }
         }
 
 
 
        /* int x = new Random().nextInt(3);
         if (x == 1) {*/
-                        }
+    }
 
-    public void listarJogadores(){
+    public void listarJogadores() {
 
         /*List<Jogador> jogadores = db.listaTodasPontuacoes();
 
@@ -102,10 +98,11 @@ public class MainActivity extends AppCompatActivity {
             //Log.d("Tempos", "/nID:" + j.getCodigo() + " Nome: " + j.getApelido());
             arrayList.add(j.getCodigo() + "-" + j.getApelido() + "-" + j.getTempo());
             adapter.notifyDataSetInvalidated();
-        }*/
+        }*
+
+         */
     }
 }
-
         /*if (x == 2) {
             Intent intent = new Intent(this, Fase2.class);
             startActivity(intent);

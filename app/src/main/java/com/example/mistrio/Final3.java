@@ -24,7 +24,7 @@ public class Final3 extends AppCompatActivity {
         startActivity(intent);
     }
     public void tela(View view){
-        Intent intent = new Intent(this, Tela_final.class);
+        Intent intent = new Intent(this, Localizacao.class);
         startActivity(intent);
     }
 }
