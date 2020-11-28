@@ -3,31 +3,22 @@ package com.example.mistrio;
 public class Jogador {
 
     int codigo;
-    String apelido;
+    String nome;
     int idade;
-    int tempo;
 
-    public Jogador(String apelido, String idade) {
+    public Jogador(){}
 
-    }
 
-    public Jogador(int _codigo, String _apelido, int _idade, int _tempo) {
+    public Jogador(int _codigo, String _nome, int _idade){
         this.codigo = _codigo;
-        this.apelido = _apelido;
+        this.nome = _nome;
         this.idade = _idade;
-        this.tempo = _tempo;
     }
 
-    public Jogador(String _apelido, int _idade, int _tempo) {
-        this.apelido = _apelido;
+    public Jogador( String _nome, int _idade){
+        this.nome = _nome;
         this.idade = _idade;
-        this.tempo = _tempo;
     }
-
-    public Jogador() {
-
-    }
-
 
     public int getCodigo() {
         return codigo;
@@ -37,12 +28,12 @@ public class Jogador {
         this.codigo = codigo;
     }
 
-    public String getApelido() {
-        return apelido;
+    public String getNome() {
+        return nome;
     }
 
-    public void setApelido(String apelido) {
-        this.apelido = apelido;
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
     public int getIdade() {
@@ -53,12 +44,6 @@ public class Jogador {
         this.idade = idade;
     }
 
-    public int getTempo() {
-        return tempo;
-    }
-
-    public void setTempo(int tempo) {
-        this.tempo = tempo;
-    }
 }
+
 

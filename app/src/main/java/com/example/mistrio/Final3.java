@@ -23,7 +23,7 @@ public class Final3 extends AppCompatActivity {
         Intent intent = new Intent(this, Curiosidade.class);
         startActivity(intent);
     }
-    public void tela(View view){
+    public void localizacao(View view){
         Intent intent = new Intent(this, Localizacao.class);
         startActivity(intent);
     }

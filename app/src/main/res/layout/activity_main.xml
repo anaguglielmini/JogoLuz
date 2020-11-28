@@ -15,10 +15,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="match_parent"
-            android:layout_height="92dp" />
+        <EditText
+            android:id="@+id/editCodigo"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:ems="10"
+            android:hint="@string/txtCodigo"
+            android:inputType="textPersonName"
+            android:importantForAutofill="no" />
 
         <Button
             android:id="@+id/btnComo"
@@ -51,11 +56,23 @@
             android:autofillHints="" />
 
         <Button
+            android:id="@+id/btnSalvar"
+            android:layout_width="254dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center"
+            android:text="@string/txtSalvar" />
+
+        <Button
             android:id="@+id/btnComeco"
             android:layout_width="254dp"
             android:layout_height="64dp"
             android:layout_gravity="center"
             android:onClick="comeco"
             android:text="@string/btnComeco" />
+        <ListView
+            android:id="@+id/ListViewJogadores"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
