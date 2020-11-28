@@ -60,4 +60,5 @@
     <string name="btnLocalizacao">Get Current Localization</string>
     <string name="txtSalvar">Salvar Nome</string>
     <string name="txtCodigo">Código</string>
+    <string name="btnMedo">Medo</string>
 </resources>

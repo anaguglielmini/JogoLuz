@@ -1,10 +1,12 @@
 package com.example.mistrio;
 
 import android.Manifest;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.os.Looper;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -21,6 +23,8 @@ import com.google.android.gms.location.LocationServices;
 
 public class Localizacao extends AppCompatActivity {
 
+    Button btnMedo;
+
     private static final int REQUEST_CODE_LOCALIZATION_PERMISSION = 1;
     private TextView txtLongitude;
     private ProgressBar progressBar;
@@ -30,6 +34,7 @@ public class Localizacao extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.localizacao);
 
+        btnMedo = findViewById(R.id.btnMedo);
         txtLongitude = findViewById(R.id.txtLongitude);
         progressBar = findViewById(R.id.progressBar);
 
@@ -109,6 +114,10 @@ public class Localizacao extends AppCompatActivity {
                         }
                     }
                 }, Looper.getMainLooper());
+    }
+    public void medo (View view){
+        Intent intent = new Intent(this, FimJogo.class);
+        startActivity(intent);
     }
 }
 

@@ -41,6 +41,14 @@
         android:textSize="16sp"
         android:textStyle="bold"/>
 
+    <Button
+        android:id="@+id/btnMedo"
+        android:layout_width="254dp"
+        android:layout_height="64dp"
+        android:layout_gravity="center"
+        android:onClick="medo"
+        android:text="@string/btnMedo" />
+
 
 </LinearLayout>
 
