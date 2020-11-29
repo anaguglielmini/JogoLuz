@@ -57,9 +57,10 @@
     <string name="descimg10">DIOO</string>
 
     <string name="hint1">Código</string>
-    <string name="btnLocalizacao">Get Current Localization</string>
+    <string name="btnLocalizacao">Ver minha localização</string>
     <string name="txtSalvar">Salvar Nome</string>
     <string name="txtCodigo">Código</string>
     <string name="btnMedo">Medo</string>
     <string name="txtTentar">Tentar Um tempo melhor</string>
+    <string name="txtDoMedo">Estou de olho em você</string>
 </resources>

@@ -68,8 +68,10 @@ public class BancoDados extends SQLiteOpenHelper {
             cursor.moveToFirst();
         }
 
-        return new Jogador(Integer.parseInt(cursor.getString(0)),
+        Jogador jogador = new Jogador(Integer.parseInt(cursor.getString(0)),
                 cursor.getString(1), cursor.getInt(2));
+
+        return jogador;
     }
 
     void atualizaJogador (Jogador jogador){

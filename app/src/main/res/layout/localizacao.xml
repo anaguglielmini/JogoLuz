@@ -6,6 +6,23 @@
     android:gravity="center"
     android:orientation="vertical">
 
+    <TextView
+        android:id="@+id/txtDeOlho"
+        android:layout_width="266dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/txtDoMedo"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="24sp" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifImageView"
+        android:layout_width="205dp"
+        android:layout_height="136dp"
+        android:layout_gravity="center"
+        android:src="@drawable/olhos" />
+
     <Button
         android:id="@+id/btnGetCurrentLocation"
         style="@style/AppTheme"
@@ -43,8 +60,8 @@
 
     <Button
         android:id="@+id/btnMedo"
-        android:layout_width="254dp"
-        android:layout_height="64dp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:onClick="medo"
         android:text="@string/btnMedo" />

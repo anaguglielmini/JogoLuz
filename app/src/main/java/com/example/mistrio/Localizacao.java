@@ -3,8 +3,12 @@ package com.example.mistrio;
 import android.Manifest;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.location.Address;
+import android.location.Location;
 import android.os.Bundle;
+import android.os.Handler;
 import android.os.Looper;
+import android.os.ResultReceiver;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ProgressBar;
@@ -26,16 +30,20 @@ public class Localizacao extends AppCompatActivity {
     Button btnMedo;
 
     private static final int REQUEST_CODE_LOCALIZATION_PERMISSION = 1;
-    private TextView txtLongitude;
+    private TextView txtLongitude, txtEndereco;
     private ProgressBar progressBar;
+    private ResultReceiver resultReceiver;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.localizacao);
 
+        resultReceiver = new AddressResultReceiver(new Handler());
+
         btnMedo = findViewById(R.id.btnMedo);
         txtLongitude = findViewById(R.id.txtLongitude);
+        txtEndereco = findViewById(R.id.txtEndereco);
         progressBar = findViewById(R.id.progressBar);
 
         findViewById(R.id.btnGetCurrentLocation).setOnClickListener(new View.OnClickListener() {
@@ -110,11 +118,45 @@ public class Localizacao extends AppCompatActivity {
 
                                     )
                             );
+
+                            Location location = new Location("providerNA");
+                            location.setLatitude(latitude);
+                            location.setLongitude(longitude);
+                            fetchAddressFromLatLong(location);
+
+                        }else {
                             progressBar.setVisibility(View.GONE);
                         }
                     }
                 }, Looper.getMainLooper());
     }
+
+    private void fetchAddressFromLatLong(Location location){
+        Intent intent = new Intent(this, FetchAddressIntentService.class);
+        intent.putExtra(Constants.RECEIVER, resultReceiver);
+        intent.putExtra(Constants.LOCATION_DATA_EXTRA, location);
+        startService(intent);
+    }
+
+    private class AddressResultReceiver extends ResultReceiver{
+
+        AddressResultReceiver(Handler handler) {
+            super(handler);
+        }
+
+        @Override
+        protected void onReceiveResult(int resultCode, Bundle resultData) {
+            super.onReceiveResult(resultCode, resultData);
+
+            if (resultCode == Constants.SUCCESS_RESULT){
+                txtEndereco.setText(resultData.getString(Constants.RESULT_DATA_KEY));
+            }else {
+                Toast.makeText(Localizacao.this, resultData.getString(Constants.RESULT_DATA_KEY), Toast.LENGTH_SHORT).show();
+            }
+            progressBar.setVisibility(View.GONE);
+        }
+    }
+
     public void medo (View view){
         Intent intent = new Intent(this, FimJogo.class);
         startActivity(intent);
