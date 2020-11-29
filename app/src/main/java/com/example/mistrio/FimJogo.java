@@ -2,21 +2,12 @@ package com.example.mistrio;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Chronometer;
-import android.widget.EditText;
-import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class FimJogo extends AppCompatActivity {
 
@@ -25,6 +16,9 @@ public class FimJogo extends AppCompatActivity {
     private boolean running;
     private long pauseOffset;
     Button btnRejogar;
+
+    public FimJogo() {
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
