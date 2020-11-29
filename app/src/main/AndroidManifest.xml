@@ -42,8 +42,6 @@
         </activity>
         <activity android:name=".FimJogo">
         </activity>
-        <activity android:name=".FimJogo2">
-        </activity>
         <activity android:name=".Final1">
         </activity>
         <activity android:name=".Final2">

@@ -61,4 +61,5 @@
     <string name="txtSalvar">Salvar Nome</string>
     <string name="txtCodigo">Código</string>
     <string name="btnMedo">Medo</string>
+    <string name="txtTentar">Tentar Um tempo melhor</string>
 </resources>

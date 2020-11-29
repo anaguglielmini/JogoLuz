@@ -15,28 +15,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="49dp"
-            android:orientation="horizontal">
 
             <TextView
                 android:id="@+id/txtFim"
                 android:layout_width="214dp"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:text="@string/txtFinalJogo"
                 android:textAlignment="center"
+                android:layout_gravity="center"
                 android:textColor="#000000"
                 android:textSize="24sp" />
-
-            <TextView
-                android:id="@+id/txtNomePessoa"
-                android:layout_width="190dp"
-                android:layout_height="match_parent"
-                android:textAlignment="center"
-                android:textColor="#000000"
-                android:textSize="24sp" />
-        </LinearLayout>
 
         <TextView
             android:id="@+id/txtContinuacao"
@@ -55,18 +43,20 @@
             android:textAlignment="center"
             android:textSize="30sp" />
 
-        <ListView
-            android:id="@+id/listViewPontuacao"
-            android:layout_width="match_parent"
-            android:layout_height="220dp" />
-
         <Button
-            android:id="@+id/btnContinuar2"
+            android:id="@+id/btnRejogar"
             android:layout_width="254dp"
             android:layout_height="64dp"
             android:layout_gravity="center"
-            android:onClick="continuar2"
-            android:text="@string/btnContinuar2" />
+            android:onClick="rejogar"
+            android:text="@string/txtTentar" />
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/gifImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="231dp"
+            android:layout_gravity="center"
+            android:src="@drawable/parabains" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

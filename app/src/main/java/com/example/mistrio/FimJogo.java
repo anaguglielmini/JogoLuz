@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.Chronometer;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -19,34 +20,28 @@ import java.util.List;
 
 public class FimJogo extends AppCompatActivity {
 
-    Button btnContinuar2;
-    ListView listViewPontuacao;
-    EditText txtApelido;
-    EditText txtIdade;
 
-    BancoDados db = new BancoDados(this);
-
-    ArrayAdapter<String> adapter;
-    ArrayList<String> arrayList;
+    private Chronometer chronometer;
+    private boolean running;
+    private long pauseOffset;
+    Button btnRejogar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.fim_jogo);
 
-        listViewPontuacao = findViewById(R.id.listViewPontuacao);
-        btnContinuar2 = findViewById(R.id.btnContinuar2);
-        txtApelido = findViewById(R.id.txtApelido);
-        txtIdade = findViewById(R.id.txtIdade);
-
+        btnRejogar = findViewById(R.id.btnRejogar);
         final TextView time = findViewById(R.id.cronometro);
         long secs = Global.cronometro.Stop() / 1000;
         time.setText(Long.toString(secs) + " s");
     }
 
-        public void continuar2 (View view){
-            Intent intent = new Intent(this, FimJogo2.class);
-            startActivity(intent);
-        }
+    public void rejogar(View view){
+        /*chronometer.setBase(SystemClock.elapsedRealtime());
+        pauseOffset = 0;*/
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
     }
 
