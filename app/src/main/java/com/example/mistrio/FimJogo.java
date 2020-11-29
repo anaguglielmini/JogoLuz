@@ -33,8 +33,8 @@ public class FimJogo extends AppCompatActivity {
     }
 
     public void rejogar(View view){
-        chronometer.setBase(SystemClock.elapsedRealtime());
-        pauseOffset = 0;
+        /*chronometer.setBase(SystemClock.elapsedRealtime());
+        pauseOffset = 0;*/
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
