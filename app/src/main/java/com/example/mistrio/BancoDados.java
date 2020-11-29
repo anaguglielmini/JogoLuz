@@ -14,7 +14,7 @@ import java.util.List;
 public class BancoDados extends SQLiteOpenHelper {
 
     private  static final int VERSAO_BANCO = 1;
-    private  static final String BANCO_JOGADOR = "bd_jogador";/*BANCO_CLIENTE = BANCO_JOGADOR*/
+    private  static final String BANCO_JOGADOR = "bd_jogador";
 
     private  static final String TABELA_JOGADOR = "tb_jogadores";
 

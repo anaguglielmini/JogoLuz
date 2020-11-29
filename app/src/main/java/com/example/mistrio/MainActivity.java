@@ -83,7 +83,6 @@ public class MainActivity extends AppCompatActivity {
                 editCodigo.setText(String.valueOf(jogador.getCodigo()));
                 txtApelido.setText(jogador.getNome());
                 txtIdade.setText(jogador.getIdade());
-                //Toast.makeText(MainActivity.this,"Select "+ conteudo, Toast.LENGTH_LONG).show();
             }
         });
     }
