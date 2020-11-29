@@ -158,7 +158,7 @@ public class Localizacao extends AppCompatActivity {
     }
 
     public void medo (View view){
-        Intent intent = new Intent(this, FimJogo.class);
+        Intent intent = new Intent(this, Tela_final.class);
         startActivity(intent);
     }
 }
